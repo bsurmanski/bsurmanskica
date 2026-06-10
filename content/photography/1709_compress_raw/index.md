@@ -1,7 +1,6 @@
 ---
 title: 'Can You Compress Photo RAW files to Save Space?'
 date: 2017-09-20
-draft: true
 tags: ["photography", "compression", "raw"]
 ---
 

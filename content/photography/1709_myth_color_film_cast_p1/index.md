@@ -1,7 +1,6 @@
 ---
 title: 'The Myth of Color Film (C41) Color Shift due to Chemical Temperature [Part 1: Procedure]'
 date: 2017-09-04
-draft: true
 tags: ["photography", "film photography"]
 ---
 
