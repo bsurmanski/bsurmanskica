@@ -22,6 +22,11 @@ theme = "beautifulhugo"
     weight = 20
 
 [[menu.main]]
+    name = "Tech"
+    url = "/tech/"
+    weight = 20
+
+[[menu.main]]
     name = "About Me"
     url = "/page/about/"
     weight = 30
