@@ -1,0 +1,27 @@
+baseURL = 'https://bsurmanski.ca/'
+languageCode = 'en-us'
+title = 'Brandon Surmanski | Personal Site'
+theme = "beautifulhugo"
+
+[params]
+    readingTime = true
+    logo = "gen_logo.png"
+[params.author]
+    name = "Brandon Surmanski"
+    website = "https://bsurmanski.ca"
+    github = "bsurmanski"
+    linkedin = "in/bsurmanski"
+    500px = "bsurmanski"
+    itchio = "bsurmanski"
+    instagram = "bsurmanski"
+
+
+[[menu.main]]
+    name = "Photography"
+    url = "/photography/"
+    weight = 20
+
+[[menu.main]]
+    name = "About Me"
+    url = "/page/about/"
+    weight = 30
