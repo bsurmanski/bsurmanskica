@@ -2,10 +2,12 @@ baseURL = 'https://bsurmanski.ca/'
 languageCode = 'en-us'
 title = 'Brandon Surmanski | Personal Site'
 theme = "beautifulhugo"
+canonifyURLs = true
 
 [params]
     readingTime = true
     logo = "gen_logo.png"
+    mainSections = ["photography", "tech"]
 [params.author]
     name = "Brandon Surmanski"
     website = "https://bsurmanski.ca"
@@ -27,9 +29,16 @@ theme = "beautifulhugo"
     weight = 20
 
 [[menu.main]]
-    name = "Game Reviews"
-    url = "/games/"
+    name = "Gaming"
     weight = 30
+    hasChildren = true
+    identifier = "gaming"
+
+[[menu.main]]
+    name = "Micro Reviews"
+    url = "/games/"
+    parent = "gaming"
+    weight = 10
 
 [[menu.main]]
     name = "About Me"

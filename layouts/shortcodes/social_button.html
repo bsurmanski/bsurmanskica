@@ -1,0 +1,17 @@
+{{- $icon := .Get "icon" -}}
+{{- $text := .Get "text" -}}
+{{- $url := .Get "url" -}}
+
+{{- if not $url -}}
+  {{- if eq $icon "github" }}{{ $url = printf "https://github.com/%s" site.Params.author.github }}
+  {{- else if eq $icon "linkedin" }}{{ $url = printf "https://linkedin.com/%s" site.Params.author.linkedin }}
+  {{- else if eq $icon "instagram" }}{{ $url = printf "https://instagram.com/%s" site.Params.author.instagram }}
+  {{- else if eq $icon "500px" }}{{ $url = printf "https://500px.com/%s" (index site.Params.author "500px") }}
+  {{- else if eq $icon "itch-io" }}{{ $url = printf "https://%s.itch.io" site.Params.author.itchio }}
+  {{- end -}}
+{{- end -}}
+
+<a href="{{ $url | safeURL }}" class="btn btn-default" target="_blank" rel="noopener" style="margin: 5px 5px 5px 0;">
+  {{ with $icon }}<i class="fab fa-{{ . }}"></i> {{ end }}
+  {{ $text }}
+</a>
