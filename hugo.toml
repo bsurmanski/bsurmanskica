@@ -8,6 +8,7 @@ canonifyURLs = true
     readingTime = true
     logo = "gen_logo.png"
     mainSections = ["photography", "tech"]
+    favicon = "favicon.png"
 [params.author]
     name = "Brandon Surmanski"
     website = "https://bsurmanski.ca"
