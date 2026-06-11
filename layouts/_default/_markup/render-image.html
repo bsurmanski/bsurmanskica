@@ -1,0 +1,14 @@
+{{- $dest := .Destination -}}
+{{- $dest = strings.TrimPrefix "./" $dest -}}
+{{- $image := .Page.Resources.GetMatch $dest -}}
+{{- if $image -}}
+  {{- /* Image is a Page Resource (Bundle) */ -}}
+  <img src="{{ $image.RelPermalink }}" 
+       alt="{{ .Text }}" 
+       {{ with .Title }}title="{{ . }}"{{ end }} />
+{{- else -}}
+  {{- /* Image is in static/ or is an external URL */ -}}
+  <img src="{{ .Destination | safeURL }}" 
+       alt="{{ .Text }}" 
+       {{ with .Title }}title="{{ . }}"{{ end }} />
+{{- end -}}

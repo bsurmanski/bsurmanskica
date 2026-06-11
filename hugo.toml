@@ -2,13 +2,14 @@ baseURL = 'https://bsurmanski.ca/'
 languageCode = 'en-us'
 title = 'Brandon Surmanski | Personal Site'
 theme = "beautifulhugo"
-canonifyURLs = true
+canonifyURLs = false
 
 [params]
     readingTime = true
     logo = "gen_logo.png"
     mainSections = ["photography", "tech"]
     favicon = "favicon.png"
+
 [params.author]
     name = "Brandon Surmanski"
     website = "https://bsurmanski.ca"
