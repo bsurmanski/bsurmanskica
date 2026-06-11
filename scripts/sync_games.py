@@ -10,7 +10,6 @@ SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRIuRASQ_HlQiLM
 # Absolute Path Project Anchoring
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-GAMESDB_CACHE_PATH = os.path.join(REPO_ROOT, "data", "gamesdb_cache.json")
 DATA_OUTPUT_PATH = os.path.join(REPO_ROOT, "data", "games.json")
 IMAGE_DIR_PATH = os.path.join(REPO_ROOT, "static", "images", "games")
 
@@ -25,19 +24,18 @@ def slugify(text):
 
 
 def get_best_match_game(games):
-    """Given a list of game entries from TheGamesDB, determine the best match based on title similarity."""
+    """Given a list of game entries from TheGamesDB, determine the best match based on region priority."""
     if not games:
         return None
-    prefered = None
-    for game in games:
-        if game.get("region_id") == 1:  # Assuming region_id 1 corresponds to North America
-            return game
-        if game.get("region_id") == 2 or game.get("region_id") == 4:  # Assuming region_id 2 corresponds to Europe and region_id 4 to Japan
-            prefered = game
     
-    # For simplicity, we take the first entry as the best match.
-    # More complex logic could be implemented here (e.g., fuzzy matching).
-    return prefered or games[0]
+    # Priority order: North America > Europe > Japan > others
+    for region_id in [1, 2, 4]:
+        for game in games:
+            if game.get("region_id") == region_id:
+                return game
+    
+    # Fallback to first result if no priority regions found
+    return games[0]
 
 def fetch_gamesdb_game(game_title, system):
     """
@@ -106,20 +104,10 @@ def fetch_gamesdb_game(game_title, system):
         print(f"   ⚠️ TheGamesDB query exception: {e}")
         return None
 
-def get_gamesdb_entry(title, system, cache):
-    cache_key = f"{slugify(title)}_{slugify(system)}"
-    #if cache_key in cache.get("games", {}):
-    #    print(f"   🔁 Cache hit for '{title}' ({system})")
-    #    return cache["games"][cache_key].get("boxart")
-    
-    print(f"   🔍 Cache miss for '{title}' ({system}). Querying TheGamesDB...")
+def get_gamesdb_entry(title, system):
     game_data = fetch_gamesdb_game(title, system)
     
     if game_data:
-        print(type(cache))
-        cache.setdefault("games", {})[cache_key] = game_data
-        with open(GAMESDB_CACHE_PATH, 'w', encoding='utf-8') as f:
-            json.dump(cache, f, indent=4, ensure_ascii=False)
         boxart_url = game_data.get("boxart")
         return boxart_url
     return None
@@ -142,13 +130,6 @@ def main():
 
     games_list = []
 
-    try:
-        with open(GAMESDB_CACHE_PATH, 'r', encoding='utf-8') as f:
-            gamesdb_cache = json.load(f)
-    except FileNotFoundError:
-        gamesdb_cache = {'games': {}}
-        os.makedirs(os.path.dirname(GAMESDB_CACHE_PATH), exist_ok=True)
-
     for _, row in df.iterrows():
         if pd.isna(row['Title']):
             continue
@@ -163,7 +144,7 @@ def main():
         # Scrape missing graphics assets seamlessly
         if not os.path.exists(local_image_path) and not os.path.exists(local_image_path.replace(".jpg", ".png")):
             print(f"🔍 Searching TheGamesDB for: {title} ({system})...")
-            img_url = get_gamesdb_entry(title, system, gamesdb_cache)
+            img_url = get_gamesdb_entry(title, system)
             
             if img_url:
                 try:
