@@ -1,0 +1,2 @@
+- id: poweredBy
+  translation: <a href="https://gohugo.io">Hugo v{{ .Version }}</a> &nbsp;&bull;&nbsp; <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> Theme
