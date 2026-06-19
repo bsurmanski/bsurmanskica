@@ -3,12 +3,22 @@
 {{- $image := .Page.Resources.GetMatch $dest -}}
 {{- if $image -}}
   {{- /* Image is a Page Resource (Bundle) */ -}}
-  <img src="{{ $image.RelPermalink }}" 
-       alt="{{ .Text }}" 
-       {{ with .Title }}title="{{ . }}"{{ end }} />
+  <a href="{{ $image.RelPermalink }}" 
+     data-pswp-width="{{ $image.Width }}" 
+     data-pswp-height="{{ $image.Height }}"
+     class="pswp-gallery"
+     data-gallery="{{ .Page.File.ContentBaseName }}">
+    <img src="{{ $image.RelPermalink }}" 
+         alt="{{ .Text }}" 
+         {{ with .Title }}title="{{ . }}"{{ end }} />
+  </a>
 {{- else -}}
   {{- /* Image is in static/ or is an external URL */ -}}
-  <img src="{{ .Destination | safeURL }}" 
-       alt="{{ .Text }}" 
-       {{ with .Title }}title="{{ . }}"{{ end }} />
+  <a href="{{ .Destination | safeURL }}" 
+     class="pswp-gallery"
+     data-gallery="external">
+    <img src="{{ .Destination | safeURL }}" 
+         alt="{{ .Text }}" 
+         {{ with .Title }}title="{{ . }}"{{ end }} />
+  </a>
 {{- end -}}
