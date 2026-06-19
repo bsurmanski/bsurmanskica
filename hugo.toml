@@ -1,14 +1,17 @@
 baseURL = 'https://bsurmanski.ca/'
 languageCode = 'en-us'
-title = 'Brandon Surmanski | Personal Site'
+title = 'B Surmanski'
 theme = "beautifulhugo"
 canonifyURLs = false
+enableGitInfo = true
 
 [params]
     readingTime = true
-    logo = "gen_logo.png"
+    logo = "img001.jpg"
     mainSections = ["photography", "tech"]
-    favicon = "favicon.png"
+    favicon = "img021.png"
+    selfHosted = true
+    commit = "https://github.com/bsurmanski/bsurmanskica/tree/"
 
 [params.author]
     name = "Brandon Surmanski"
