@@ -1,7 +1,11 @@
 ---
 title: Nural Networks - Like Custom Virtual Computers
 date: 2014-07-10
-tags: ["ai", "neural nets"]
+tags:
+  - ai
+  - neural-nets
+publish: "true"
+category: tech
 ---
 
 ### Trained for a specific task, Neural Networks are like specialized virtual computers
@@ -11,7 +15,7 @@ I've been thinking about neural networks quite a bit lately. I recently read an 
 
  Neural Networks really aren't as complicated as I previously thought. There are a few different types of digital neurons used in neural networks. The most popular being perceptrons, and sigmoid neurons. The idea behind perceptrons is that the perceptron can have any number of weighted inputs, and has a single output which acts like a step function dependant on the weighted sum of the inputs.
 
-| ![http://upload.wikimedia.org/wikipedia/commons/8/8c/Perceptron_moj.png](./Perceptron_moj.png) |
+| ![http://upload.wikimedia.org/wikipedia/commons/8/8c/Perceptron_moj.png](Perceptron_moj.png) |
 | ------------------------------------------------------------ |
 | The function of a perceptron artificial neuraon.   The output (t) is only on if the sum of it's weighted inputs (x1 .. xn),   plus some bias (w0) is greater than some threashold.    (Image from Wikimedia Commons) |
 

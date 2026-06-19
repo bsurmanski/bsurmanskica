@@ -1,7 +1,11 @@
 ---
 title: Controlling a Quadcopter like a Jedi Using a Leap Motion (TM)
 date: 2014-08-26
-tags: ["drone", "hackathon"]
+tags:
+  - drone
+  - hackathon
+publish: "true"
+category: tech
 ---
 
 Recently I went to an event entitled 'NodeBots'. If you've ever heard of Node.js, you might already see where this is going. The event describes itself as "Robots powered by JavaScript". Anyone even vaguely familiar  with JavaScript will know that it is mainly used for websites. More  specifically, it is used for client-side scripting of websites. Plainly, this means a web page can run code on your computer to power the fancy transition effects of  drop down menus and all the other dynamic actions of the Web 2.0(!). Anyone  familiar with JavaScript knows it has a bit of a controversial reputation. As a  language, it has very little static checking and will keep on chugging even when an  error is encountered. This can make it quite difficult to debug. So it might seem a little strange that the idea of this event is to control robots using  JavaScript.The idea is that participants use a popular JavaScript  platform called 'Node.js'. Node.js is a platform that allows JavaScript programs to run natively, eschewing the requirement for a web browser. Explaining why  anyone would want native JavaScript is a bit complicated and is beyond the  scope of this post.
@@ -10,7 +14,7 @@ Recently I went to an event entitled 'NodeBots'. If you've ever heard of Node.js
 
 
 
-| ![img](./1A470673-BA94-42F2-8E6B-4A468A09A8A9.jpeg) |
+| ![img](1A470673-BA94-42F2-8E6B-4A468A09A8A9.jpeg) |
 | ------------------------------------------------------------ |
 | Quadcopter drone used NodeBots event.                        |
 
@@ -21,7 +25,7 @@ One of the main components in this build was the Leap Motion.  The leap motion i
 
 
 
-| ![img](./774CD5F7-4314-4C5C-85ED-B52A4E203932.jpeg) |
+| ![img](774CD5F7-4314-4C5C-85ED-B52A4E203932.jpeg) |
 | ------------------------------------------------------------ |
 | Example of Leap Motion(TM) detecting hand orientation and pose.  The Leap Motion hardware can be seen as the black box at the bottom of the image. |
 
@@ -40,7 +44,7 @@ I set up the following to control the drone:
 - The yaw is controlled by moving the right hand forward or backward relative to the left hand.
    
 
-  | ![img](./hand_control.png)]     |
+  | ![img](hand_control.png)]     |
   | ------------------------------------------------------------ |
   | Diagram showing the controls used for the drone.  A leap motion would detect hand movements and convert them to commands for the drone. |
 

@@ -1,7 +1,10 @@
 ---
-title: 'Hello World!'
+title: Hello World!
 date: 2014-03-14
-tags: ["coding"]
+tags:
+  - coding
+publish: "true"
+category: tech
 ---
 
 It seems appropriate that the first entry should be a simple  introduction; A summary of where I am right now. As of the time of this  writing I, Brandon Surmanski, am a 4th year Computer Engineering (CEG)  student at the University of Ottawa, and I am a serial programmer.

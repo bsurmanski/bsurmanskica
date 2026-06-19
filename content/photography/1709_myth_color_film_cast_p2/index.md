@@ -1,17 +1,17 @@
 ---
-title: 'The Myth of Color Film (C41) Color Shift due to Chemical Temperature [Part 2: Results]'
+title: "The Myth of Color Film (C41) Color Shift due to Chemical Temperature [Part 2: Results]"
 date: 2017-09-05
-tags: ["photography", "film photography"]
+tags:
+  - photography
+  - film-photography
+category: photography
+publish: "true"
 ---
-
-
-*If you would like to know the procedure used to get these results, see  [part 1 (Procedure)](../1709_myth_color_film_cast_p1/).*
+*If you would like to know the procedure used to get these results, see  [part 1 (Procedure)](../1709_myth_color_film_cast_p1/index).*
 
 ## Reintroduction
 
 I've heard rumors that developing color film (C41) requires holding the  chemical temperature constant ±1℉ for fear the color shift demons will  recolor your film in strange and unusual ways. I developed slices of the same shot at different chemical temperatures to test that claim.
-
-
 
 ## Results
 
@@ -21,41 +21,39 @@ All pictures were taken at  f/8, 1/1000s, ISO400, including the digital  control
  This means the analog histograms can be compared with each other fairly but the digital histogram has a different scale.
  All analog pictures were scanned with auto-exposure. The scanner  auto-mapped each RGB channel film densities to image minimum and  maximum.
 
-
-
-| ![img](./digital.png) |
+| ![img](digital.png) |
 | ------------------------------------------------------------ |
 | Digital Control (D5600, 35mm f/1.8G)                         |
 
-| ![img](./102f_3m30s.png)|
+| ![img](102f_3m30s.png)|
 | ------------------------------------------------------------ |
 | 102℉, 3'30" Developer, 6'30" Blix  (Analog Control, recommended settings) |
 
-| ![img](./76f_20m.png)|
+| ![img](76f_20m.png)|
 | ------------------------------------------------------------ |
 | 76℉ (Room Temperature), 20'00" Developer, 8'00" Blix. Note: no agitation |
 
-| ![img](./76f_20m-1781053566512-1.png) |
+| ![img](76f_20m-1781053566512-1.png) |
 | ------------------------------------------------------------ |
 | *Same as above with color correction                         |
 
-| ![img](./76f_20m_vigorous.png) |
+| ![img](76f_20m_vigorous.png) |
 | ------------------------------------------------------------ |
 | 76℉ (Room Temperature), 20'00" Developer, 8'00" Blix. Note: constant agitation |
 
-| ![img](./90f_3m45s.png) |
+| ![img](90f_3m45s.png) |
 | ------------------------------------------------------------ |
 | 90℉, 3'45" Developer, 3'45" Blix                             |
 
-| ![img](./90f_8m30s.png) |
+| ![img](90f_8m30s.png) |
 | ------------------------------------------------------------ |
 | 90℉, 8'30" Developer, 8'30" Blix                             |
 
-| ![img](./108f_4m.png) |
+| ![img](108f_4m.png) |
 | ------------------------------------------------------------ |
 | 108℉, 4'00" Developer, 6'00" Blix                            |
 
-| ![img](./d76.png) |
+| ![img](d76.png) |
 | ------------------------------------------------------------ |
 | Bonus: identical  Superia 400 slice developed in D76 black and white developer (single  use). This was using the recommended development time (7'00" I think)  and room temperature. |
 

@@ -1,7 +1,10 @@
 ---
 title: Computer Engineering vs Software Engineering vs Computer Science vs Electrical Engineering
 date: 2014-04-14
-tags: ["university"]
+tags:
+  - university
+publish: "true"
+category: tech
 ---
 
 ## CEG vs SEG vs CS vs ELG

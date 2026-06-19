@@ -1,7 +1,12 @@
 ---
-title: 'Bomberman At the Shopify Lounge'
+title: Bomberman At the Shopify Lounge
 date: 2014-04-05
-tags: ["coding", "ai", "games"]
+tags:
+  - coding
+  - ai
+  - games
+publish: "true"
+category: tech
 ---
 
 
@@ -13,15 +18,15 @@ Last Sunday, I attended another AI competition, this one was hosted at the Shopi
 
 
 
-| ![img](./A75722A2-C227-469D-9F91-DC03D3E78060.jpeg)          |
-| ------------------------------------------------------------ |
+| ![img](A75722A2-C227-469D-9F91-DC03D3E78060.jpeg)                |
+| ---------------------------------------------------------------- |
 | check out that slide on the left! Unpictured, an arcade machine! |
 
 Among the other impressive features, an arcade machine, full wall mural of a unicorn knight battle, and of course, a free espresso machine. It looked like a delightful place to work on a day to day basis.
 
 
 
-| ![img](./D4102549-1DF7-4A19-A947-B3AB4552FF36.jpeg) |
+| ![img](D4102549-1DF7-4A19-A947-B3AB4552FF36.jpeg) |
 | --------------------------------------------------- |
 | Unicorn knights face off!                           |
 
@@ -31,7 +36,7 @@ Anyways, I wasn't there just to drink fancy lattes and ride slides. The goal of 
 
 
 
-| ![http://199.101.98.242/media/shots/38646-Mega_Bomberman_(USA)-3.png](./38646-Mega_Bomberman_(USA)-3.png) |
+| ![http://199.101.98.242/media/shots/38646-Mega_Bomberman_(USA)-3.png](38646-Mega_Bomberman_(USA)-3.png) |
 | ------------------------------------------------------------ |
 | Place bombs, explode stuff (except yourself)                 |
 
@@ -60,7 +65,7 @@ To keep things simple, I created two classes:  a 'Bomberman' main class to conne
 
 below can be seen an image of the bomberman implementation used. 
 
-| ![img](./2014-04-05-201841_1366x768_scrot.png) |
+| ![img](2014-04-05-201841_1366x768_scrot.png) |
 | ------------------------------------------------------------ |
 | Green are unbreakable walls, brown are breakable rocks. Also visible are the  players (marked as p1, p2, p4), bombs (marked as BB) and flames from an  explosion (marked as +) |
 

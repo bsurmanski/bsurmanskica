@@ -1,18 +1,20 @@
 ---
-title: 'The Myth of Color Film (C41) Color Shift due to Chemical Temperature [Part 1: Procedure]'
+title: "The Myth of Color Film (C41) Color Shift due to Chemical Temperature [Part 1: Procedure]"
 date: 2017-09-04
-tags: ["photography", "film photography"]
+tags:
+  - photography
+  - film-photography
+category: photography
+publish: "true"
 ---
 
-*If you aren't interested in the procedure and just want to see the results, skip to [part 2 (Results)](../1709_myth_color_film_cast_p2/).*
+*If you aren't interested in the procedure and just want to see the results, skip to [part 2 (Results)](../1709_myth_color_film_cast_p2/index).*
 
 ## Introduction
 
 It seems to be common consensus that when processing C41 (color  negative) film at home, you need to control the temperature of the  chemistry very carefully. I've heard that if your developer is off by  1℉, You're going to get some bad [color shifts](http://www.largeformatphotography.info/forum/archive/index.php/t-101217.html). Other [posts](https://www.photrio.com/forum/index.php?threads/c-41-effect-of-changing-temperature.37173/) claim 5℉ is the threshold. Looking around online, I've found many claims about color shifts, but no experimental results. One [post](https://www.photo.net/discuss/threads/time-temperature-chart-for-kodak-c-41-process.257953/) claimed that the color shifts are correctable in a digital workflow, but  otherwise if optically printing will be uncorrectable due to highlight  and shadow color shift being independent.
 
  The purpose of this experiment is to see how careful I need to be when controlling C41 chemistry temperature, and to visualize how serious the color shifts may be.
-
-
 
 ## Equipment
 
@@ -29,17 +31,11 @@ It seems to be common consensus that when processing C41 (color  negative) film 
 - 1 tea tin to store undeveloped film
 - 3 disposable water bottles to store chemicals
 
-
-
-| ![img](./IMG_20170823_200952-1781042618554-13.jpg) |
+| ![img](IMG_20170823_200952-1781042618554-13.jpg) |
 | :------------------------------------------------: |
 |      All the gear needed to take the photos.       |
 
-
-
-
-
-| ![img](./IMG_20170823_200441-1781042618554-15.jpg) |
+| ![img](IMG_20170823_200441-1781042618554-15.jpg) |
 | :------------------------------------------------: |
 |     All equipment needed to develop the film.      |
 
@@ -63,7 +59,7 @@ For this, The film camera was set up on the tripod and a friend took 24  picture
 In the dark, the film was extracted from the film canister and sliced  into roughly measured slices. There is one issue I needed to address:  until the film is developed, it is impossible to know where each frame  lies on the film. When loading the film into the camera, it could have  been offset by a bit. I worked around this by attempting to keep each  measure to roughly twice the length of a single frame; due to something  like [Nyquist's Theorem](https://www.quora.com/What-is-the-intuitive-meaning-of-the-Nyquist%E2%80%93Shannon-sampling-theorem-Why-is-it-that-the-sampling-frequency-has-to-be-greater-than-twice-of-the-message-signal-What-is-the-physical-meaning-and-significance-of-over-and-under-sampling), I'm guaranteed to get at least one complete frame per slice if each slice is twice the length of a frame.
 
 
-| ![img](./_DSC0022.jpeg)   |
+| ![img](_DSC0022.jpeg)   |
 | :----------------------------------------------------------: |
 | A roughly measured cut of folded tape was used to feel out correct lengths of film.  I needed to improvise since in the dark a ruler could not be used. |
 
@@ -84,7 +80,7 @@ I did the following for each development cycle:
 - Turn off the lights, so the undeveloped film would not be exposed to light
 - Extract a single film slice from the storage tin, carefully closing the tin after
 
-| ![img](./_DSC0023.jpeg)    |
+| ![img](_DSC0023.jpeg)    |
 | :----------------------------------------------------------: |
 | I didn't have any tools, so I ripped the cartridge open, by hand, in the dark. I used the technique described in [this](https://www.youtube.com/watch?v=6dmvHKZ7mB4) video. |
 
@@ -93,7 +89,7 @@ I did the following for each development cycle:
 - Turn the lights back on
 - create a water-bath to control chemical temperature. this was done  by filling a bathtub with water at a set temperature and submerging the  chemicals in the bath until temperature equalized
 
-| ![img](./_DSC0024.jpeg)    |
+| ![img](_DSC0024.jpeg)    |
 | :----------------------------------------------------------: |
 | Chemicals warming up to set temperature in water bath. The water was set slightly higher than the target temperature then the chemicals and water bath  were let to cool down to the target. Looks a bit silly, but it works. |
 
@@ -104,16 +100,11 @@ I did the following for each development cycle:
 - the film was hung up to dry on film hooks
 
 
-| ![img](./_DSC0025.jpeg)   |
+| ![img](_DSC0025.jpeg)   |
 | :----------------------------------------------------------: |
 | Two independently developed film slices drying on film clips. Here you can  see the frames aren't aligned on the slices, but it doesn't matter since they are long enough for two frames |
-
-
 
 - The film was scanned using a Epson v550 scanner. Auto-exposure was  turned on, but otherwise no other color correction was used. I believe  the 'auto-exposure' option works on a per-channel basis. This isn't  entirely unrealistic since if you are creating an analog print using an  enlarger, the light channels can similarly be adjusted independently.
 
 
-
-
-
-***Next, check out [part 2 (Results)](../1709_myth_color_film_cast_p2/).\***
+***Next, check out [part 2 (Results)](../1709_myth_color_film_cast_p2/index).\***

@@ -1,7 +1,12 @@
 ---
-title: 'Can You Compress Photo RAW files to Save Space?'
+title: Can You Compress Photo RAW files to Save Space?
 date: 2017-09-20
-tags: ["photography", "compression", "raw"]
+tags:
+  - photography
+  - compression
+  - raw
+category: photography
+publish: "true"
 ---
 
 ## Introduction
@@ -20,13 +25,13 @@ I only started photography as a hobby about a year ago, and already I  have abou
 
 I used the 7z utility (version 16.03 [64-bit]) on Windows 10. First I tried LZMA2 with the following settings:
 
-| ![Compression Level: Ultra. Compression method: LZMA2. Dictionary size: 512mb. Word size: 64. Solid Block size: 4gb](./Capture.png) |
-| ------------------------------------------------------------ |
-|                                                              |
+| ![Compression Level: Ultra. Compression method: LZMA2. Dictionary size: 512mb. Word size: 64. Solid Block size: 4gb](Capture.png) |
+| --------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                   |
 
 I then tried with BZIP2 with the following settings:
 
-| ![Archive format: 7z. Compression level: Ultra. Compression method: bzip2. Dictionary size: 900kb. Solid block size: 64mb](./Capture-1781056141988-1.png)|
+| ![Archive format: 7z. Compression level: Ultra. Compression method: bzip2. Dictionary size: 900kb. Solid block size: 64mb](Capture-1781056141988-1.png)|
 | ------------------------------------------------------------ |
 |                                                              |
 

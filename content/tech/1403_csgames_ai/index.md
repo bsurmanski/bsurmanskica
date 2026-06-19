@@ -1,16 +1,20 @@
 ---
-title: 'CS Games - AI Challenge'
+title: CS Games - AI Challenge
 date: 2014-03-27
-tags: ["coding", "ai"]
+tags:
+  - coding
+  - ai
+publish: "true"
+category: tech
 ---
 
 Last weekend I attended the 'CS Games'. The CS Games are a Canadian  computer science competition that, this year, was hosted at ETS in  Montreal. In this post, I will be looking at one of the challenges I  participated in: The AI Challenge.
 
  Being my first attempt at a CS games event, I had no idea what to  expect. There were 3 people from our school team working on this  challenge, and upon arrival, we were told that we would be writing an AI for a two team capture-the-flag snowball fight. There will be two  teams, each AI controlled by a different university. Each team has seven players and the goal is to steal the flag in the middle of the course,  and bring it back to the starting position, or to knock out all of the  players on the other team. To prevent a rush for the flag, at least 20%  of the players in the game must be knocked out before the flag can be  picked up. Teams will fight a succession of games across a tournament  bracket to see who is the best.
 
-| ![img](./D9169A5B-057A-4228-BA8E-991D37AE4D99.jpeg) |
-| ------------------------------------------------------------ |
-| The AI Challenge. Two snowballer gangs enter, one leave.     |
+| ![img](D9169A5B-057A-4228-BA8E-991D37AE4D99.jpeg)        |
+| -------------------------------------------------------- |
+| The AI Challenge. Two snowballer gangs enter, one leave. |
 
 
 The systems provided was a Kubuntu machine with no internet access.  Documentation was provided on a local server. We had two computers to  work on, both with a file-system synced with the logged in user  (uottawa). So, if we changed a file on one computer, it would change the file on the other computer.
